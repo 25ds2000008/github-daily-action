@@ -1,21 +1,21 @@
-name: Daily Commit - 25ds2000008@ds.study.iitm.ac.in
-permissions:
-  contents: write
-on:
-  schedule:
-    - cron: '17 10 * * *'
-  workflow_dispatch:
-jobs:
-  daily-commit:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-      - name: Create Daily Commit - 25ds2000008@ds.study.iitm.ac.in
-        run: |
-          echo "Last run: $(date)" >> daily-log.txt
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add daily-log.txt
-          git commit -m "Daily automated commit"
-          git push
+# name: Daily Commit - 25ds2000008@ds.study.iitm.ac.in
+# permissions:
+#   contents: write
+# on:
+#   schedule:
+#     - cron: '17 10 * * *'
+#   workflow_dispatch:
+# jobs:
+#   daily-commit:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout Repository
+#         uses: actions/checkout@v3
+#       - name: Create Daily Commit - 25ds2000008@ds.study.iitm.ac.in
+#         run: |
+#           echo "Last run: $(date)" >> daily-log.txt
+#           git config --global user.name "github-actions"
+#           git config --global user.email "actions@github.com"
+#           git add daily-log.txt
+#           git commit -m "Daily automated commit"
+#           git push
