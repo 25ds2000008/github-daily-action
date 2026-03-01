@@ -1,4 +1,4 @@
-name: Daily Commit Workflow
+name: Daily Commit - 25ds2000008@ds.study.iitm.ac.in
 
 permissions:
   contents: write
@@ -15,9 +15,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-
-      - name: Step for 25ds200008@ds.study.iitm.ac.in
-        run: echo "Workflow triggered for 25ds200008@ds.study.iitm.ac.in"
 
       - name: Create Daily Commit
         run: |
